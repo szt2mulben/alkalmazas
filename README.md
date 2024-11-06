@@ -1,29 +1,58 @@
-# alkalmazas
 
-This template should help get you started developing with Vue 3 in Vite.
+# Munkaidő Nyilvántartó
+Ez egy egyszerű webalkalmazás, amely lehetővé teszi a munkaidő nyilvántartását, feladatok kezelését, és címkék szerinti szűrést. Az alkalmazás Vue.js-t használ a frontend fejlesztéséhez, és a helyi tárolót (localStorage) az adatok mentésére.
 
-## Recommended IDE Setup
+# Telepítés
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### Előfeltételek
+A projekt futtatásához a következőkre van szükség:
+Node.js (ajánlott: legfrissebb LTS verzió)
+npm vagy yarn (csomagkezelő)
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+# Telepítési lépések
+1. Klónozd a repository-t:
 
-## Project Setup
+```sh
+git clone <repo_url>
+```
 
+2. Lépj be a projekt mappájába:
+```sh
+cd alkalmazas
+```
+
+3. Telepítsd a szükséges csomagokat:
+Ha npm-t használsz:
 ```sh
 npm install
 ```
-
-### Compile and Hot-Reload for Development
+4. Indítsd el a fejlesztői szervert:
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+# Funkcionalitás
+Bejegyzések hozzáadása: Az alkalmazás lehetővé teszi munkaidő bejegyzések létrehozását, ahol megadhatod a dátumot, kezdési és befejezési időpontokat, valamint a feladat leírását.
+Címkék: A felhasználók címkéket rendelhetnek a bejegyzésekhez, mint például 'projekt', 'ügyfél', 'marketing', 'fejlesztés'.
+Adatok mentése: Az adatok a böngésző localStorage-jában kerülnek tárolásra, így az adatok megmaradnak a frissítések után is.
+Bejegyzések szerkesztése és törlése: Lehetőség van meglévő bejegyzések szerkesztésére és törlésére is.
+Reszponzív dizájn: Az alkalmazás reszponzív, így különböző képernyőméreteken is jól használható.
 
-```sh
-npm run build
-```
+# Fejlesztési környezet
+A projekt Vue.js alapú, és a következő eszközöket használja:
+
+Vue.js: A frontend fejlesztéshez.
+Vue Router: A navigáció kezeléséhez.
+Bootstrap: Az alapvető stílusokhoz és reszponzív dizájnhoz.
+LocalStorage: Az adatok helyi tárolására.
+
+# További információk
+
+Az alkalmazás alapvetően munkaidő-nyilvántartásra lett kifejlesztve, de könnyen testreszabható, ha más típusú adatokat szeretnél nyilvántartani.
+Az alkalmazás a localStorage-t használja, így nem szükséges adatbázis a működéséhez.
+A kódot egyszerűsítettem, hogy könnyen bővíthető és karbantartható legyen.
+
+# Fejlesztők
+A projektet készítette: Bence Mulati
